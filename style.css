@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+main {
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto 100px auto;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "nav blog" "submissions blog" ". blog";
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: "Grand Hotel", cursive;
+  line-height: 1.0;
+  text-align: center;
+  color: mediumpurple;
+  text-shadow: lightpink 2px 2px;
+  margin: 30px;
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+h3 {
+  padding: 15px 0 0 20px;
+}
+
+time {
+  margin-right: 20px;
+  padding-bottom: 5px;
+  font-size: small;
+  display: block;
+  text-align: end;
+}
+
+article {
+  background-color: white;
+  color: #535bf2;
+  border-radius: 12px;
+  /*border: 2px solid #646cff;*/
+  width: 600px;
+  box-shadow: #646cff 0 0 5px;
+  padding: 0;
+}
+
+article:nth-of-type(odd) {
+  background-color: cornsilk;
+}
+
+article:nth-of-type(even) {
+  background-color: lavender;
+}
+
+article header {
+  background-color: lavenderblush;
+  border-radius: 8px 8px 0 0;
+  padding: 0;
+}
+
+article img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+article p {
+  margin: 20px;
+}
+
+.comments {
+  border-top: 1px solid #646cff;
+  padding: 20px;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+  background-color: lavenderblush;
+}
+
+.comment {
+  margin: 0 20px;
+}
+
+.comments span {
+  font-style: italic;
+}
+
+#blog {
+  grid-area: blog;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#submissions {
+  grid-area: submissions;
+  width: 90%;
+}
+
+blockquote {
+  color: #646cff;
+  font-style: italic;
+  margin: 20px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: white;
+  border-radius: 8px;
+  color: #646cff;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #646cff;
+}
+
+button:hover {
+  background-color: rgba(238,174,202,0.7);
+  color: white;
+  border-color: white;
+}
+
+
+nav {
+  grid-area: nav;
+  min-width: 250px;
+}
+
+li {
+  list-style: none;
+  margin: 4px 0;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+
+
+
